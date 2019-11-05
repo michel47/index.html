@@ -1,3 +1,3 @@
 ---
 ---
-## Welcome to <{{site.url}}>
+## Welcome to <{{site.url}}/index.html>
