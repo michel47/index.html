@@ -3,7 +3,7 @@ layout: default
 ---
 The MIT License (MIT)
 
-Copyright (c) {{ page.date | date:"+%Y" }} {{site.owner}}
+Copyright (c) {{ dateModified | date:"+%Y" }} {{site.owner}}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

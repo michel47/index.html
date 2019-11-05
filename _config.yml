@@ -1,4 +1,8 @@
 --- # jekyll config
+owner: mgcombes@gmail.com
 url: https://michel47.github.io
-seacth: https://duckduckgo.com/?q
+search: https://duckduckgo.com/?q
 tag: z3NDG9dJtsUSnX9xV46jM5dvWDBnFBdfgPyn
+
+gems:
+  - jekyll-last-modified-at

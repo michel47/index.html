@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf8"/>
+<link href="https://cdn.statically.io/gh/iglake/cssjs/master/css/style.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.jsdelivr.net/gh/iglake/js@1.7/dist/favicon.js"></script>
+<div id="hero" class="first content">%title% (%domain%)</div><br>
+<div class=content>
+{{content}}
+</div>
+<div id=badges style="text-align: right; padding: 0; margin-right: calc((100vw - 740px)/2 - 3em);">
+<img alt="GitHub" src="https://img.shields.io/github/license/michel47/index.html?style=flat-square">
+<a href=https://www.jsdelivr.com/package/gh/iglake/cssjs>
+<img style="opacity=0.8;" src=https://data.jsdelivr.com/v1/package/gh/iglake/cssjs/badge?style=rounded></a>
+<a href="//duckduckgo.com/?q=!g+{{site.tag}}"><img src="https://img.shields.io/badge/tag-{{site.tag}}-yellow.svg?style=flat-square" alt="{{site.tag}}" /></a>
+<span id=ipaddr><a href="//duckduckgo.com/?q=!g+%ip%"><img src="https://img.shields.io/badge/IP-%ip%-pink.svg?style=flat-square" alt="%ip%" /></a></span>
+<img alt="Mozilla HTTP Observatory Grade" src="https://img.shields.io/mozilla-observatory/grade-score/%domain%">
+<a title="Netlify Status" href=https://app.netlify.com/sites/><img src=https://api.netlify.com/api/v1/badges/{{site.netname}}/deploy-status></a>
+</div>
+{% if jekyll.environment == 'production' %}
+<script src="https://cdn.jsdelivr.net/gh/iglake/js@1.7/dist/config.js"></script>
+{% else %}
+<script src="http://ocean:8088/GITrepo/iglake/cssjs/js/src/config.js"></script>
+{% endif %}
+<script>
+// https://cdn.jsdelivr.net/gh/michel47/index.html@master/_config.json
+// https://raw.githubusercontent.com/michel47/index.html/master/_config.json
+CFG.File('https://cdn.jsdelivr.net/gh/michel47/index.html@master/_config.json',callback('hero'));
+</script>
